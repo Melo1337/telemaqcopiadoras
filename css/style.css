@@ -234,8 +234,29 @@ nav ul li a:hover {
 
 /* Contato */
 
+.contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .container .button_wpp {
+    width: 300px;
+    border-radius: 6px;
+    border-color: rgb(33, 185, 33);
+    padding: 10px;
+    background-color: green;
+    color: white;
+    font-weight: 600;
+}
+
+.contact .container {
+    display: flex;
+    flex-direction: column;
+}
+
 .contact-form {
-    max-width: 600px;
+    width: 600px;
     margin: 0 auto;
     background: var(--white);
     padding: 30px;
