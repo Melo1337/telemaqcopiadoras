@@ -125,6 +125,12 @@ nav ul li a:hover {
     padding: 120px 0 50px;
 }
 
+.hero > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hero h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -234,54 +240,21 @@ nav ul li a:hover {
 
 /* Contato */
 
-.contact .container {
+.whatsapp {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-.contact .container .button_wpp {
     width: 300px;
-    border-radius: 6px;
-    border-color: rgb(33, 185, 33);
-    padding: 10px;
-    background-color: green;
-    color: white;
+}
+
+.whatsapp img {
+    margin-right: 1rem;
+    width: 20px;
+}
+
+.whatsapp a {
     font-weight: 600;
-}
-
-.contact .container {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form {
-    width: 600px;
-    margin: 0 auto;
-    background: var(--white);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 600;
-}
-
-input,
-textarea,
-select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-textarea {
-    height: 150px;
+    color: #FFFFFF;
 }
 
 /* Footer */
