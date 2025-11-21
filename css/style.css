@@ -34,7 +34,6 @@ a {
 }
 
 .btn {
-    margin-top: 20px;
     display: inline-block;
     background: var(--complementary);
     color: var(--white);
@@ -142,6 +141,21 @@ nav ul li a:hover {
     margin: 0 auto 30px;
 }
 
+.whatsapp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem 1rem 2rem;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.whatsapp img {
+    margin-right: 1rem;
+    width: 20px;
+}
+
 /* Serviços */
 .services {
     background: var(--light);
@@ -238,23 +252,59 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-/* Contato */
+/* Market */
 
-.whatsapp {
+.printers {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow-x: auto;
+    white-space: nowrap; 
 }
 
-.whatsapp img {
-    margin-right: 1rem;
-    width: 20px;
+.printer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 280px;
+    height: 350px;
+    margin-right: 40px;
 }
 
-.whatsapp a {
-    font-weight: 600;
-    color: #FFFFFF;
+.printer > p {
+    white-space: normal; 
+}
+
+.printer > * {
+    width: 100%;
+}
+
+.printer > img {
+    margin-top: 1rem;
+    width: 70%;
+}
+
+.printer > a > div {
+    background-color: #075E54;
+}
+
+.printer > a > div:hover {
+    background-color: #128c7e;
+}
+
+.printer > a > div {
+    width: 80%;
+    height: 2rem;
+} 
+
+.printer > a > div > h4 {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.printer > a > div > img {
+    height: 1rem;
+    margin-right: 0.5rem;
 }
 
 /* Footer */
