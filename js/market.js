@@ -1,29 +1,4 @@
-const listaDeProdutos = [
-    {
-        nome: "Brother MFC-9330CDW",
-        preco: 2500.00,
-        descricao: "Multifuncional semi-nova, laser, Colorida, wif-fi",
-        imagemSrc: "/images/imp1.jpg" 
-    },
-    {
-        nome: "Brother Mfc-9460CDN",
-        preco: 2000.00,
-        descricao: "Multifuncional semi-nova, laser, Colorida, wif-fi",
-        imagemSrc: "/images/imp2.jpg"
-    },
-    {
-        nome: "HP LaserJet Color CP1215",
-        preco: 800.00,
-        descricao: "Impressora semi-nova, laser, Colorida, wif-fi",
-        imagemSrc: "/images/imp3.jpg"
-    },
-    {
-        nome: "Brother DCP-8157DN",
-        preco: 1000.00,
-        descricao: "Multifuncional semi-nova, laser, wif-fi",
-        imagemSrc: "/images/imp4.jpg"
-    },
-];
+import { listaDeProdutos } from '../data/products.js';
 
 function renderItens(listPrinters) {
     const htmlProducts = listPrinters.map(product => {
@@ -42,17 +17,14 @@ function renderItens(listPrinters) {
                     </a>
                 </div>`;
     });
-
-    // 2. Usando querySelector para pegar o container com a CLASSE "printers"
+    
     const printersContainer = document.querySelector(".printers");
 
     if (printersContainer) {
-        // Converte o array de strings HTML em uma única string e insere no DOM
         printersContainer.innerHTML = htmlProducts.join('');
     } else {
         console.error("Elemento com a classe '.printers' não encontrado!");
     }
 }
 
-// 3. Corrigido: Chamando a função com o nome da variável correta
 renderItens(listaDeProdutos);

@@ -1,25 +1,26 @@
-const listaDeProdutos = [
+export const listaDeProdutos = [
     {
-        id: 1,
-        nome: "Multifuncional Brother MFC-9330CDW Laser Colorida",
+        nome: "Brother MFC-9330CDW",
         preco: 2500.00,
         descricao: "Multifuncional semi-nova, laser, Colorida, wif-fi",
+        imagemSrc: "/images/imp1.jpg" 
     },
     {
-        id: 2,
-        nome: "Multifuncional Brother Mfc-9460 Color",
+        nome: "Brother Mfc-9460CDN",
         preco: 2000.00,
         descricao: "Multifuncional semi-nova, laser, Colorida, wif-fi",
+        imagemSrc: "/images/imp2.jpg"
     },
     {
-        id: 3,
-        nome: "IMPRESSORA HP COLOR CP1215 LASERJET",
+        nome: "HP LaserJet Color CP1215",
         preco: 800.00,
         descricao: "Impressora semi-nova, laser, Colorida, wif-fi",
+        imagemSrc: "/images/imp3.jpg"
     },
-
+    {
+        nome: "Brother DCP-8157DN",
+        preco: 1000.00,
+        descricao: "Multifuncional semi-nova, laser, wif-fi",
+        imagemSrc: "/images/imp4.jpg"
+    },
 ];
-
-module.exports = {
-    produtos: listaDeProdutos
-};
