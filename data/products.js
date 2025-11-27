@@ -8,7 +8,7 @@ export const listaDeProdutos = [
     {
         nome: "Brother Mfc-9460CDN",
         preco: 2000.00,
-        descricao: "Multifuncional semi-nova, laser, Colorida, wif-fi",
+        descricao: "Multifuncional semi-nova, laser, Colorida",
         imagemSrc: "/images/imp2.jpg"
     },
     {
@@ -20,7 +20,7 @@ export const listaDeProdutos = [
     {
         nome: "Brother DCP-8157DN",
         preco: 1000.00,
-        descricao: "Multifuncional semi-nova, laser, wif-fi",
+        descricao: "Multifuncional semi-nova, laser",
         imagemSrc: "/images/imp4.jpg"
     },
 ];
