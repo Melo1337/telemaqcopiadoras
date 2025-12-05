@@ -4,7 +4,7 @@ function renderItens(listPrinters) {
     const htmlProducts = listPrinters.map(product => {
         const precoFormatado = product.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
-        return `<div class="printer">
+        return `<div class="printer"  id="${product.modelo}" >
                     <h3>${product.nome}</h3>
                     <img src="${product.imagemSrc || '/images/default.jpg'}" alt="${product.nome}" srcset="">
                     <p>${product.descricao}</p>
@@ -22,9 +22,7 @@ function renderItens(listPrinters) {
 
     if (printersContainer) {
         printersContainer.innerHTML = htmlProducts.join('');
-    } else {
-        console.error("Elemento com a classe '.printers' não encontrado!");
-    }
+    } 
 }
 
 renderItens(listaDeProdutos);
