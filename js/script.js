@@ -1,3 +1,5 @@
+import { listaDeProdutos } from "../data/products.js";
+
 document.addEventListener('DOMContentLoaded', function () {
 
     localStorage.clear();
@@ -51,7 +53,9 @@ document.addEventListener('DOMContentLoaded', function () {
         printer.addEventListener('click', function() {
         
         const idDiv = this.id
-        localStorage.setItem('idDiv', idDiv);
+        let arrayImp = listaDeProdutos[idDiv]
+        localStorage.setItem('arrayImp', JSON.stringify(arrayImp));
+
         window.location.href = 'printerFeatures.html'
     })
     })

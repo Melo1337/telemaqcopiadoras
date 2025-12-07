@@ -1,10 +1,10 @@
 import { listaDeProdutos } from '../data/products.js';
 
 function renderItens(listPrinters) {
-    const htmlProducts = listPrinters.map(product => {
+    const htmlProducts = listPrinters.map((product, index) => {
         const precoFormatado = product.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
-        return `<div class="printer"  id="${product.modelo}" >
+        return `<div class="printer"  id="${index}" >
                     <h3>${product.nome}</h3>
                     <img src="${product.imagemSrc || '/images/default.jpg'}" alt="${product.nome}" srcset="">
                     <p>${product.descricao}</p>
