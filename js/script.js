@@ -53,8 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
         printer.addEventListener('click', function() {
         
         const idDiv = this.id
-        let arrayImp = listaDeProdutos[idDiv]
-        localStorage.setItem('arrayImp', JSON.stringify(arrayImp));
+        localStorage.setItem('idDiv', idDiv);
 
         window.location.href = 'printerFeatures.html'
     })
