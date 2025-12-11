@@ -56,7 +56,11 @@ body {
     margin: 0;
 }
 
-.container-main {
+.feature {
+    width: 30rem;
+}
+
+.container-main {   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,11 +71,17 @@ body {
     color: blue;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .btn-features p {
     font-weight: 600;
     margin: 0px;
+}
+
+.btn-features img {
+    width: 20px;
+    height: 20px;
 }
 
 tbody {

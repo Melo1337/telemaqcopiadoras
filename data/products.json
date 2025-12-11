@@ -8,7 +8,14 @@
       "Até 18 páginas por minuto",
       "Conectividade sem Fio - Wirelless",
       "Impressão e scanner coloridos"
-    ]
+    ],
+    "feature": {
+      "impressão": {},
+      "conectividade": {},
+      "cópia": {},
+      "scan": {},
+      "geral": {}
+    }
   },
   {
     "nome": "Brother Mfc-9460CDN",
