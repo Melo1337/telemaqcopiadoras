@@ -1,14 +1,9 @@
+import {getProdutos} from '../data/requestProducts.js'
+
 document.addEventListener('DOMContentLoaded', async () => {
     const containerPrinter = document.querySelector('.container-printer');
     let idDiv = localStorage.getItem('idDiv');
 
-    // Busca a lista de produtos do arquivo JSON
-    async function getProdutos() {
-        const response = await fetch('/data/products.json');
-        return await response.json();
-    }
-
-    // Monta a UL das headFeatures
     function loadHeadFeatures(headFeatures) {
         return headFeatures
             .map(item => `<li>${item}</li>`)
