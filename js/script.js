@@ -1,5 +1,3 @@
-import { listaDeProdutos } from "../data/products.js";
-
 document.addEventListener('DOMContentLoaded', function () {
 
     localStorage.clear();
@@ -46,16 +44,4 @@ document.addEventListener('DOMContentLoaded', function () {
             header.classList.remove('scrolled');
         }
     });
-
-    const printer = document.querySelectorAll('.printer')
-
-    printer.forEach(function(printer){
-        printer.addEventListener('click', function() {
-        
-        const idDiv = this.id
-        localStorage.setItem('idDiv', idDiv);
-
-        window.location.href = 'printerFeatures.html'
-    })
-    })
 });
