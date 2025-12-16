@@ -270,6 +270,10 @@ nav ul li a:hover {
     margin-right: 40px;
 }
 
+.printer:hover {
+    cursor: pointer;
+}
+
 .printer > p {
     white-space: normal; 
 }

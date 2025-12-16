@@ -1,5 +1,6 @@
 * {
     font-family: sans-serif;
+    margin: 0px;
 }
 
 body {
@@ -7,57 +8,69 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.close:hover{
+    cursor: pointer;
+}
 .container-printer {
     padding: 1rem;
-    width: 800px;
+    width: 40rem;
     height: auto;
     border: 1px solid black;
     border-radius: 10px;
 }
 
+.container-printer > :nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.container-printer > :nth-child(1) > img {
+    height: 1.8rem;
+}
+
 .container-head {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container-head h1 {
+    font-size: 1.7rem;
+}
+
+.container-head h2 {
+    font-size: 1rem;
 }
 
 .container-head > img {
-    width: 300px;
-    height: 300px;
+    width: 220px;
+    height: 220px;
 }
 
-.container-head > div {
+.head-details {
     display: flex;
     flex-direction: column;
-    width: 100%;
-}
+    justify-content: space-evenly;
+} 
 
 .whatsapp {
-    width: 40%;
-    height: 60%;
-    background-color: green;
+    background-color: #075E54;
     color: white;
     display: flex;
-    padding: 6px;
     align-items: center;
     justify-content: center;
-    border-radius: 6px;
+    padding: 8px;
+    border-radius: 0.3rem;
 }
 
 .whatsapp img {
     margin-right: 10px;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
 }
 
-.features ul li {
-    list-style-type: none; /* Opcional: remove os marcadores padrão */
-    padding: 0;
-    margin: 0;
-}
-
-.feature {
-    width: 30rem;
+.head-details ul {
+    padding-left: 20px;
 }
 
 .container-main {   
@@ -66,12 +79,17 @@ body {
     align-items: center;
 }
 
+.feature {
+    width: 40rem;
+}
+
 .btn-features {
-    border-bottom: 4px solid blue;
-    color: blue;
+    border-bottom: 4px solid #03548A;
+    color: #03548A;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 2rem 0rem 0.4rem 0rem;
 }
 
 .btn-features p {
