@@ -123,7 +123,7 @@ tbody tr:nth-child(even) {
     background-color: #e7f3ff;
 }
 
-@media (min-width: 320px) and (max-width: 400px) {
+@media (min-width: 320px) and (max-width: 500px) {
 
     .close {
         max-width: 20px;
