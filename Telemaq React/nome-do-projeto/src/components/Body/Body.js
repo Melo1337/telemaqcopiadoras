@@ -10,7 +10,7 @@ function Body() {
                     <p>Oferecemos as melhores soluções em equipamentos de impressão para sua empresa com planos flexíveis e suporte especializado.</p>
                     <a href="https://wa.me/5532984195001?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20loca%C3%A7%C3%A3o!">
                         <div className="btn whatsapp">
-                            <img src={'/img/img1.jpg'} alt="whatsapp-icon" srcSet="" />
+                            <i class="fab fa-whatsapp"></i>
                             <h4>Solicitar Orçamento</h4>
                         </div>
                     </a>
