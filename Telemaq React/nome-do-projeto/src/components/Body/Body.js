@@ -1,5 +1,5 @@
 import './Body.css';
-import Market from '../Printers/Market'
+import Market from '../Market/Market'
 
 function Body() {
     return (
