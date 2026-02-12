@@ -1,5 +1,6 @@
 import './Body.css';
 import Market from '../Market/Market'
+import ButtomWhatsapp from '../ButtomWhatsapp/ButtomWhatsapp.js'
 
 function Body() {
     return (
@@ -8,12 +9,7 @@ function Body() {
                 <div className="container">
                     <h2>Soluções em Locação de Impressoras e Multifuncionais</h2>
                     <p>Oferecemos as melhores soluções em equipamentos de impressão para sua empresa com planos flexíveis e suporte especializado.</p>
-                    <a href="https://wa.me/5532984195001?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20loca%C3%A7%C3%A3o!">
-                        <div className="btn whatsapp">
-                            <i class="fab fa-whatsapp"></i>
-                            <h4>Solicitar Orçamento</h4>
-                        </div>
-                    </a>
+                    <ButtomWhatsapp texto="Solicitar Orçamento" link="Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20loca%C3%A7%C3%A3o!" />
                 </div>
             </section>
 
@@ -87,7 +83,7 @@ function Body() {
                 </div>
             </section>
 
-            <section id="market">
+            <section id="produtos">
                 <div className="container">
                     <h2 className="section-title">Impressoras a venda</h2>
                     <div className="printers">

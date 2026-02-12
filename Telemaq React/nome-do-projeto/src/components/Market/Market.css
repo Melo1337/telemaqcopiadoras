@@ -1,22 +1,18 @@
 .printers {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-evenly;  
     overflow-x: auto;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 .printer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-right: 40px;
     width: 280px;
     height: 350px;
-    margin-right: 40px;
-}
-
-.printer:hover {
-    cursor: pointer;
 }
 
 .printer > p {
@@ -32,25 +28,28 @@
     width: 70%;
 }
 
-.printer > a > div {
-    background-color: #075E54;
-}
-
-.printer > a > div:hover {
-    background-color: #128c7e;
-}
-
-.printer > a > div {
+.printer > div {
     width: 80%;
     height: 2rem;
 } 
 
-.printer > a > div > h4 {
+.printer > div > h4 {
     font-size: 0.9rem;
     font-weight: 400;
 }
 
-.printer > a > div > img {
+.printer > div > img {
     height: 1rem;
     margin-right: 0.5rem;
+}
+
+.buttons {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons a .btn {
+    padding: 0.4rem;
+    background-color: #075E54;
 }

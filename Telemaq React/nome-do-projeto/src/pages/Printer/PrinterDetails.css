@@ -1,21 +1,16 @@
-.close:hover {
-    cursor: pointer;
-}
-
 .container-printer {
     padding: 1rem;
     width: 40rem;
     height: auto;
 }
 
-.container-printer> :nth-child(1) {
+.return i {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    margin-bottom: 1rem;
 }
 
-.container-printer> :nth-child(1)>img {
-    height: 1.8rem;
+.return p {
+    margin-left: 6px;
 }
 
 .container-head {
@@ -42,26 +37,6 @@
     justify-content: space-evenly;
 }
 
-.whatsapp {
-    background-color: #075E54;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-    border-radius: 0.3rem;
-}
-
-.whatsapp p {
-    font-size: 0.5rem;
-}
-
-.whatsapp img {
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
-}
-
 .head-details ul {
     padding-left: 20px;
 }
@@ -70,10 +45,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.feature {
-    width: 40rem;
 }
 
 .btn-features {
@@ -97,6 +68,10 @@ tbody {
     border-color: inherit;
 }
 
+table {
+    width: 100%;
+}
+
 th,
 td {
     padding: 10px 15px;
@@ -112,34 +87,11 @@ tbody tr:nth-child(even) {
 }
 
 @media (min-width: 320px) and (max-width: 500px) {
-
-    .close {
-        max-width: 20px;
-        max-height: 20px;
-        margin-bottom: 16px;
-    }
-
     .container-printer {
-        max-width: 500px;
-        border: 0px;
+        width: 98%;
     }
-
     .container-head {
+        display: flex;
         flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-
-    .container-head > img, .head-details > ul, .head-details > h2, .head-details > h1 {
-        margin-bottom: 10px;
-    }
-
-    .feature {
-        width: auto;
-    }
-
-    th,
-    td {
-        font-size: 0.8rem;
     }
 }

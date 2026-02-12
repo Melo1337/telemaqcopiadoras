@@ -51,3 +51,7 @@ nav ul li a:hover {
     cursor: pointer;
     color: var(--primary);
 }
+
+.nav-links {
+    margin-top: -16px;
+}

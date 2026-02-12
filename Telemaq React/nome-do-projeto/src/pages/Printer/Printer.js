@@ -1,11 +1,13 @@
+import './PrinterDetails.css';
+import { useLocation, Link} from "react-router-dom";
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import './PrinterDetails.css';
 import listaProdutos from '../../data/json/products.json'
-import { useLocation } from "react-router-dom";
+import ButtomWhatsapp from '../../components/ButtomWhatsapp/ButtomWhatsapp';
 
 function Printer() {
 
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     const location = useLocation();
     const IndexClick = location.state || {};
 
@@ -16,12 +18,13 @@ function Printer() {
     }
 
     function loadTable(detalhe) {
-        detalhe.map(([titulo, valor]) => {
+        const detalheHTML = Object.entries(detalhe).map(([titulo, valor]) => {
             return <tr>
                       <th>{titulo}</th>
                       <td>{valor}</td>
                     </tr>
-        })
+        });
+        return detalheHTML
     }
 
     function loadFeatures() {
@@ -45,7 +48,11 @@ function Printer() {
         <>
             <Header />
             <div className="container-printer">
-                <div><img className="close" src={'/img/close.png'} alt="" /></div>
+                <Link to={`/`} className='return'>
+                    <i class="fa-solid fa-arrow-left">
+                        <p>{"Voltar"}</p>
+                    </i>
+                </Link>
                 <div className="container-head">
                     <img src={`/img/${itemDetails.imagemSrc}.jpg`} alt="" />
                     <div className="head-details">
@@ -54,12 +61,7 @@ function Printer() {
                             {loadHeadFeatures(itemDetails.headFeatures)}
                         </ul>
                         <h2>Valor: R$ {itemDetails.preco},00</h2>
-                        <a href="https://wa.me/5532984195001?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20impressora%20{itemDetails.nome}!">
-                            <div className="btn whatsapp">
-                                <img src="./img/whatsapp.png" alt="whatsapp-icon" />
-                                <h4>Comprar via whatsapp</h4>
-                            </div>
-                        </a>
+                        <ButtomWhatsapp link={`Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20impressora%20${itemDetails.nome}!`} texto={"Comprar agora"} />
                     </div>
                 </div>
 
